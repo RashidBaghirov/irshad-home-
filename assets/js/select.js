@@ -79,7 +79,7 @@ let ulparent = document.querySelector(".box");
 cart.addEventListener("click", function (product) {
   ulparent.classList.toggle("active");
   let basket = JSON.parse(localStorage.getItem("basket"));
-  
+  registr.classList.remove("activ");
   ul.innerHTML=" ";
   
   basket.forEach((devices) => {
