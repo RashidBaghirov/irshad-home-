@@ -122,6 +122,7 @@ let registr = document.querySelector(".registration");
 
 user.addEventListener("click", function () {
   registr.classList.toggle("activ");
+  ulparent.classList.remove("active");
 });
 
 let sub = document.querySelector(".sub");
