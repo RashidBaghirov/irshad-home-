@@ -108,7 +108,6 @@ cart.addEventListener("click", function (product) {
       let li = this.parentElement;
       let src = li.querySelector(".cart-image img").src;
       basket = basket.filter((device) => device.src != src);
-      li.remove();
       ShowTotalPrice(basket);
       ShowProductCount(basket);
       localStorage.setItem("basket", JSON.stringify(basket));
