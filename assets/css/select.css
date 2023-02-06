@@ -110,7 +110,6 @@ header .image img {
 }
 
 .box {
-  width: 509px;
   height: 300px;
   visibility: hidden;
   opacity: 0;
