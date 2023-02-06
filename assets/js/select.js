@@ -78,40 +78,41 @@ let ulparent = document.querySelector(".box");
 
 cart.addEventListener("click", function (product) {
   ulparent.classList.toggle("active");
-});
-let basket = JSON.parse(localStorage.getItem("basket"));
-
-
-basket.forEach((devices) => {
-  let task = `
-<li>
-<div class="cart-image">
-    <img src="${devices.src}" alt="">
-</div>
-<div class="info">
-   <h6>${devices.title}</h6>
-   <span>${devices.count}</span>
-   x
-    <span>${devices.price}AZN</span>
-</div>
-<div class="xbtn">
-    <b>X</b>
-</div>
-</li>
-`;
-  ul.innerHTML += task;
-});
-let delbtn = document.querySelectorAll(".xbtn");
-
-delbtn.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    let li = this.parentElement;
-    let src = li.querySelector(".cart-image img").src;
-    basket = basket.filter((device) => device.src != src);
-    li.remove();
-    ShowTotalPrice(basket);
-    ShowProductCount(basket);
-    localStorage.setItem("basket", JSON.stringify(basket));
+  let basket = JSON.parse(localStorage.getItem("basket"));
+  
+  ulparent.innerHTML=" ";
+  
+  basket.forEach((devices) => {
+    let task = `
+  <li>
+  <div class="cart-image">
+      <img src="${devices.src}" alt="">
+  </div>
+  <div class="info">
+     <h6>${devices.title}</h6>
+     <span>${devices.count}</span>
+     x
+      <span>${devices.price}AZN</span>
+  </div>
+  <div class="xbtn">
+      <b>X</b>
+  </div>
+  </li>
+  `;
+    ul.innerHTML += task;
+  });
+  let delbtn = document.querySelectorAll(".xbtn");
+  
+  delbtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      let li = this.parentElement;
+      let src = li.querySelector(".cart-image img").src;
+      basket = basket.filter((device) => device.src != src);
+      li.remove();
+      ShowTotalPrice(basket);
+      ShowProductCount(basket);
+      localStorage.setItem("basket", JSON.stringify(basket));
+    });
   });
 });
 
