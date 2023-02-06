@@ -78,8 +78,7 @@ header{
       border-radius: 10px;
       padding: 30px;
       position: absolute;
-      top: 130px;
-      left: 365px;
+      margin: 0 auto;
       transition: 1s;
       .title{
         display: flex;
@@ -132,7 +131,7 @@ header{
     opacity: 0;
     position: absolute;
     top: 75px;
-    right: 20px;
+    right: 0;
     background-color: white;
     overflow-y: scroll;
     transition: 1s;
