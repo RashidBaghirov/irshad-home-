@@ -80,7 +80,7 @@ cart.addEventListener("click", function (product) {
   ulparent.classList.toggle("active");
   let basket = JSON.parse(localStorage.getItem("basket"));
   
-  ulparent.innerHTML=" ";
+  ul.innerHTML=" ";
   
   basket.forEach((devices) => {
     let task = `
