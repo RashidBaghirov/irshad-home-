@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+.box {
+    background-color: white;
+    transition: 1s;
+    z-index: 10;
+    .box-device {
+      li {
+        padding: 15px;
+        display: flex;
+        list-style: none;
+        border-bottom: 1px solid rgb(66, 65, 65);
+        .cart-image {
+          width: 150px;
+          height: 190px;
+          img {
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .info {
+          padding: 20px;
+          margin-left: 25px;
+          span{
+            font-size: 23px;
+            display: inline-block;
+            margin-top: 65px;
+          }
+          h2{
+            overflow: hidden;
+            color: green
+          }
+        }
+        .xbtn {
+          position: absolute;
+          right: 12px;
+          font-size: 27px;
+          cursor: pointer;
+        }
+      }
+    }
+    .button {
+        position: fixed;
+        bottom: 0px;
+        width: 100% !important;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      a{
+        width: 100%;
+        button{
+            width: 100%;
+        }
+      }
+    }
+  }
+  

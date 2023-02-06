@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  &::-webkit-scrollbar {
+    width: 14px;             
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color:#FF9931;
+    border-radius: 22px;      
+    border: 3px solid gray;  
+  }
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 1px 2px 1px #01D063;
+    background-color: white;
+    z-index: 100;
+    .image{
+        width: 100px;
+        height: 100px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#reclams{
+  padding: 100px;
+  border-bottom: 2px solid #FF9931;
+    .devices{
+      box-shadow: 1px 1px 25px 1px gray;
+        border-radius: 10px;
+        overflow: hidden;
+        .reclam{
+            .text{
+                height: 32px;
+                background-color: yellow;
+                
+            }
+        }
+        .device{
+            .image{
+                margin: auto;
+                width: 290px;
+                height: 319px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .month{
+                h6{
+                    line-height: 16px;
+                }
+            }
+            .buy{
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .registration{
+      width: 50%;
+      visibility: hidden;
+      opacity: 0;
+      background-color: white;
+      box-shadow: 1px 1px 25px 1px grey;
+      border-radius: 10px;
+      padding: 30px;
+      position: absolute;
+      top: 130px;
+      left: 365px;
+      transition: 1s;
+      .title{
+        display: flex;
+        justify-content: center;
+      }
+      .submit{
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .registration.activ{
+      visibility: visible;
+      opacity: 1;
+      z-index: 3;
+    }
+}
+
+  #Products {
+    padding: 50px 0;
+    .product {
+      padding: 10px 20px;
+      box-shadow: 1px 1px 25px 1px gray;
+      border-radius: 10px;
+      .image {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+        }
+        h3 {
+          font-size: 10px;
+        }
+      }
+
+      .add{
+        button{
+            width: 100%;
+        }
+      }
+    }
+  }
+  
+  .box {
+    width: 400px;
+    height: 300px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: white;
+    overflow-y: scroll;
+    transition: 1s;
+    z-index: 1;
+    .box-device {
+      li {
+        border-bottom: 1px solid black;
+        padding: 15px;
+        display: flex;
+        list-style: none;
+        .cart-image {
+          width: 90px;
+          height: 120px;
+          border-right: 1px solid black;
+          img {
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .info {
+          padding: 20px;
+          margin-left: 25px;
+        }
+        .xbtn {
+          position: absolute;
+          right: 12px;
+          font-size: 13px;
+          cursor: pointer;
+        }
+      }
+    }
+    .button {
+      height: 30px;
+      background-color: white;
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        height: 25px !important;
+        width: max-content !important;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 14px;             
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: #01D063;    
+      border-radius: 22px;      
+      border: 3px solid gray;  
+    }
+  }
+  
+  .box.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.box {
+  background-color: white;
+  transition: 1s;
+  z-index: 10;
+}
+.box .box-device li {
+  padding: 15px;
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid rgb(66, 65, 65);
+}
+.box .box-device li .cart-image {
+  width: 150px;
+  height: 190px;
+}
+.box .box-device li .cart-image img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.box .box-device li .info {
+  padding: 20px;
+  margin-left: 25px;
+}
+.box .box-device li .info span {
+  font-size: 23px;
+  display: inline-block;
+  margin-top: 65px;
+}
+.box .box-device li .info h2 {
+  overflow: hidden;
+  color: green;
+}
+.box .box-device li .xbtn {
+  position: absolute;
+  right: 12px;
+  font-size: 27px;
+  cursor: pointer;
+}
+.box .button {
+  position: fixed;
+  bottom: 0px;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .button a {
+  width: 100%;
+}
+.box .button a button {
+  width: 100%;
+}/*# sourceMappingURL=checkout.css.map */
