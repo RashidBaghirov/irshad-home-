@@ -111,7 +111,7 @@ header .image img {
 }
 
 .box {
-  width: 400px;
+  width: 30%;
   height: 300px;
   visibility: hidden;
   opacity: 0;
