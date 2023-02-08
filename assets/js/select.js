@@ -80,8 +80,8 @@ cart.addEventListener("click", function (product) {
   ulparent.classList.toggle("active");
   let basket = JSON.parse(localStorage.getItem("basket"));
   registr.classList.remove("activ");
-  ul.innerHTML=" ";
-  
+  ul.innerHTML = " ";
+
   basket.forEach((devices) => {
     let task = `
   <li>
@@ -102,7 +102,7 @@ cart.addEventListener("click", function (product) {
     ul.innerHTML += task;
   });
   let delbtn = document.querySelectorAll(".xbtn");
-  
+
   delbtn.forEach((btn) => {
     btn.addEventListener("click", function () {
       let li = this.parentElement;
@@ -115,7 +115,6 @@ cart.addEventListener("click", function (product) {
     });
   });
 });
-
 
 let user = document.querySelector(".user");
 let registr = document.querySelector(".registration");
